@@ -1,13 +1,21 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 
+// https://vitejs.dev/config/
+// vite.config.js
+
+// export default {
+//   server: {
+//     host: 'localhost',
+//   },
+// };
+
 export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://verse-valley.vercel.app/',
-        secure: true, // Set to true if your backend server uses HTTPS
-        changeOrigin: true, // Required for Vercel backend
+        target: 'http://localhost:3000',
+        secure: false,
       },
     },
   },
