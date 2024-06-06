@@ -27,22 +27,13 @@ export default function Home() {
   }, []);
 
   return (
-    <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto '>
-      <div className="flex items-center">
-        <h1 className='text-3xl font-bold lg:text-6xl'>
+    <div className='flex flex-col  px-3 max-w-6xl mx-auto '>
+      {/* <div className="flex items-center">
+        <h1 className='text-3xl text-blue-700 font-bold lg:text-6xl'>
           <Typewriter text="VerseValley" delay={100} />
         </h1>
-      </div>
+      </div> */}
 
-      <h1 className='font-bold text-pink-400 text-lg lg:text-lg'>
-        <Typewriter text="Where words bloom and stories thrive. Welcome to a vibrant community of writers and storytellers. Dive into our world of inspiration and creativity." delay={50} />
-      </h1>
-      <Link
-        to='/search'
-        className='text-xs sm:text-sm text-teal-500 font-bold hover:underline'
-      >
-        View all posts
-      </Link>
       <div className='carousel-container'>
         <Carousel
           showThumbs={false}
@@ -60,6 +51,19 @@ export default function Home() {
           ))}
         </Carousel>
       </div>
+
+
+      <h1 className='font-bold text-teal-500 text-lg lg:text-lg'>
+        <Typewriter text="Discover how advancements in various fields are reshaping life, health, and beyond, revolutionizing the way we live and thrive." delay={50} />
+      </h1>
+      <Link
+        to='/search'
+        className='text-xs sm:text-sm text-black-500 font-bold hover:underline'
+      >
+        View all posts
+      </Link>
+
+
       <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7'>
         {posts && posts.length > 0 && (
           <div className='flex flex-col gap-6'>
