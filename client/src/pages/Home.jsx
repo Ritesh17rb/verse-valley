@@ -7,15 +7,16 @@ import Typewriter from '../components/Typewriter'; // Import Typewriter componen
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
-
   const imageUrls = [
-    'https://source.unsplash.com/random/300×300?poems',
-    'https://source.unsplash.com/random/300×300?coding',
-    'https://source.unsplash.com/random/300×300?poems',
-    "https://source.unsplash.com/random/300×300?book",
-    "https://source.unsplash.com/random/300×300?poems",
-    "https://source.unsplash.com/random/300×300?technology",
+    "/images/img1.jpg", // local image
+    "/images/img2.jpg",
+    "/images/img3.jpg",
+    "/images/img4.jpg",
+    "/images/img5.jpg",
+    "/images/img6.jpg",
+
   ];
+
 
   useEffect(() => {
     const fetchPosts = async () => {
