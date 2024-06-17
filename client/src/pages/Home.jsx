@@ -8,7 +8,7 @@ import Typewriter from '../components/Typewriter'; // Import Typewriter componen
 export default function Home() {
   const [posts, setPosts] = useState([]);
   const imageUrls = [
-    "/images/img1.jpg", // local image
+    "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // local image
     "/images/img2.jpg",
     "/images/img3.jpg",
     "/images/img4.jpg",
