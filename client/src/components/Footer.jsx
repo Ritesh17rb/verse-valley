@@ -20,7 +20,7 @@ export default function FooterCom() {
               <Footer.Title title='About' />
               <Footer.LinkGroup col>
                 <Footer.Link
-                  href='https://portfolio-five-phi-46.vercel.app/'
+                  href='https://ritesh-portfolio-five.vercel.app/'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
@@ -45,7 +45,7 @@ export default function FooterCom() {
                 >
                   Github
                 </Footer.Link>
-                <Footer.Link href='https://portfolio-five-phi-46.vercel.app/' target='_blank'>Discord</Footer.Link>
+                <Footer.Link href='https://ritesh-portfolio-five.vercel.app/' target='_blank'>Discord</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
