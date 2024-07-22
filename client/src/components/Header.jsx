@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { toggleTheme } from '../redux/theme/themeSlice';
 import { signoutSuccess } from '../redux/user/userSlice';
 import { useEffect, useState } from 'react';
+import './Header.css'; // Import the CSS file
 
 export default function Header() {
   const path = useLocation().pathname;
@@ -53,13 +54,11 @@ export default function Header() {
     <Navbar className='border-b-2'>
       <Link
         to='/'
-        className='self-center whitespace-nowrap text-2xl sm:text-3xl font-bold text-gray-800 dark:text-black transition duration-100 ease-in-out'
-        style={{ fontFamily: 'cursive' }}
+        className='self-center whitespace-nowrap text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white transition duration-300 ease-in-out transform hover:scale-110 moving-gradient'
+        style={{ fontFamily: 'Pacifico, cursive' }}
       >
         VerseValley
       </Link>
-
-
 
       <form onSubmit={handleSubmit} className='hidden lg:flex items-center'>
         <TextInput
@@ -130,17 +129,6 @@ export default function Header() {
           <Link to='/about'>Contributor</Link>
         </Navbar.Link>
 
-
-        {/* {currentUser?.isAdmin || (
-          <>
-            <Navbar.Link active={path === '/projects'} as={'div'}>
-              <Link to='/projects'>Projects</Link>
-            </Navbar.Link>
-          </>
-        )} */}
-
-
-
         {currentUser?.isAdmin && (
           <>
             <Navbar.Link active={path === '/create-post'} as={'div'}>
@@ -149,15 +137,13 @@ export default function Header() {
             <Navbar.Link active={path === '/dashboard'} as={'div'}>
               <Link to='/dashboard?tab=dash'>Dashboard</Link>
             </Navbar.Link>
-
           </>
         )}
 
         <Navbar.Link active={path === '/Profile'} as={'div'}>
           <Link to='/dashboard?tab=profile'>Profile</Link>
         </Navbar.Link>
-
       </Navbar.Collapse>
-    </Navbar >
+    </Navbar>
   );
 }

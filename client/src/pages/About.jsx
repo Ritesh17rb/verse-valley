@@ -5,7 +5,7 @@ const About = () => {
     <div className="about-container">
       <iframe
         title="External Website"
-        src="https://portfolio-five-phi-46.vercel.app/"
+        src="https://ritesh-portfolio-five.vercel.app/"
         width="100%"
         height="600px"
         frameBorder="0"

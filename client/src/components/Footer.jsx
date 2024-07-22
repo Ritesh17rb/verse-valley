@@ -9,8 +9,8 @@ export default function FooterCom() {
           <div className='mt-5'>
             <Link
               to='/'
-              className='self-center whitespace-nowrap text-2xl sm:text-3xl font-bold text-gray-800 dark:text-black transition duration-100 ease-in-out hover:text-red-4s00'
-              style={{ fontFamily: 'cursive' }}
+              className='self-center whitespace-nowrap text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white transition duration-300 ease-in-out transform hover:scale-110 moving-gradient'
+              style={{ fontFamily: 'Pacifico, cursive' }}
             >
               VerseValley
             </Link>
@@ -31,7 +31,7 @@ export default function FooterCom() {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  Verse Valley
+                  VerseValley
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>

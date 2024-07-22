@@ -158,6 +158,10 @@ export default function Header() {
           <Link to='/dashboard?tab=profile'>Profile</Link>
         </Navbar.Link>
 
+        <Navbar.Link active={path === '/about'} as={'div'}>
+          <Link to='/about'>Contributor</Link>
+        </Navbar.Link>
+
       </Navbar.Collapse>
     </Navbar >
   );

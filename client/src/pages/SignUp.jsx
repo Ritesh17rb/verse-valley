@@ -43,15 +43,23 @@ export default function SignUp() {
         {/* left */}
         <div className='flex-1'>
           <Link to='/' className='font-bold dark:text-white text-4xl'>
-            <span className='px-2 py-1 bg-gradient-to-r from-indigo-500  rounded-lg text-white'>
-              Verse
+            <span
+
+              // className='px-2 py-1 bg-gradient-to-r from-indigo-500  rounded-lg text-white'
+              className='self-center whitespace-nowrap text-4xl sm:text-3xl font-bold text-gray-800 dark:text-white transition duration-300 ease-in-out transform hover:scale-110 moving-gradient'
+              style={{ fontFamily: 'Pacifico, cursive' }}
+
+            >
+              Namaste (नमस्ते)
             </span>
 
-            Valley
+
           </Link>
-          <p className='text-sm mt-5'>
-            This is a demo project. You can sign up with your email and password
-            or with Google.
+          <p className='text-1xl mt-5'>
+
+            आज ही अकाउंट बनाएं और Technology, Life, और Productivity पर बेहतरीन लेख पढ़ें!
+
+
           </p>
         </div>
         {/* right */}

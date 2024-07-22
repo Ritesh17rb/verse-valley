@@ -52,16 +52,21 @@ export default function SignIn() {
             className='font-bold dark:text-white text-4xl transition duration-100 ease-in-out hover:text-blue-200'
             style={{ fontFamily: 'cursive' }}
           >
-            <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 rounded-lg text-white'>
-              Verse
+            <span
+
+              // className='px-2 py-1 bg-gradient-to-r from-indigo-500 rounded-lg text-white'
+              className='self-center whitespace-nowrap text-4xl sm:text-3xl font-bold text-gray-800 dark:text-white transition duration-300 ease-in-out transform hover:scale-110 moving-gradient'
+              style={{ fontFamily: 'Pacifico, cursive' }}
+            >
+              Namaste! नमस्ते
             </span>
-            <span> Valley</span>
+            🙏
+            {/* <span> Valley</span> */}
 
           </Link>
 
-          <p className='text-sm mt-5'>
-            This is a demo project. You can sign in with your email and password
-            or with Google.
+          <p className='text-lg mt-5'>
+            “Turn the page, and let the story unfold. Every book is a journey waiting to be explored”
           </p>
         </div>
         {/* right */}
