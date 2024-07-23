@@ -74,6 +74,7 @@ export default function Header() {
         </Button>
       </form>
       <div className='flex items-center gap-2 md:order-2'>
+        {/* Toggle theme button in desktop view */}
         <Button
           className='w-12 h-10 hidden sm:inline'
           color='gray'
@@ -122,13 +123,22 @@ export default function Header() {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
+        {/* Toggle theme button in mobile view */}
+        <div className='block lg:hidden mb-4'>
+          <Button
+            color='gray'
+            pill
+            onClick={() => dispatch(toggleTheme())}
+          >
+            {theme === 'light' ? <FaSun /> : <FaMoon />}
+          </Button>
+        </div>
         <Navbar.Link active={path === '/'} as={'div'}>
           <Link to='/'>Home</Link>
         </Navbar.Link>
         <Navbar.Link active={path === '/about'} as={'div'}>
           <Link to='/about'>Contributor</Link>
         </Navbar.Link>
-
         {currentUser?.isAdmin && (
           <>
             <Navbar.Link active={path === '/create-post'} as={'div'}>
@@ -139,7 +149,6 @@ export default function Header() {
             </Navbar.Link>
           </>
         )}
-
         <Navbar.Link active={path === '/Profile'} as={'div'}>
           <Link to='/dashboard?tab=profile'>Profile</Link>
         </Navbar.Link>
